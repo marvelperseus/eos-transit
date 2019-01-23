@@ -1,7 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "bootstrap": "lerna bootstrap",
+    "bootstrap": "lerna exec npm install",
+    "publish": "lerna publish --force-publish",
     "clean": "lerna clean --yes",
     "start": "yarn watch-packages",
     "start-all": "lerna run start --stream",
@@ -9,7 +10,7 @@
     "watch-packages": "lerna run watch",
     "build-packages-production": "lerna run build-production --no-bail",
     "lint": "./node_modules/.bin/tslint -c ./tslint.json -p ./tsconfig.json",
-    "test": ""
+    "test": "lerna run test"
   },
   "devDependencies": {
     "@types/node": "^10.12.6",
