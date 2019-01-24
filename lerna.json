@@ -5,6 +5,7 @@
   ],
   "version": "independent",
   "npmClient": "yarn",
+  "npmClientArgs":[“--no-optional”],
   "command": {
     "publish": {
       "message": "chore(release): publish",
